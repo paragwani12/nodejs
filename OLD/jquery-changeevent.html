@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <style>
+  .lightOn{display:none;}
+  </style>
+      <title>jquery-SETUP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	$('select').change(function(){
+		$('body').css('background-color',this.value);
+	})
+	
+	
+	});
+	</script>
+
+  </head>
+	<body>
+		<form>
+		<select>
+			<option value="red">red</option>
+			<option value="white">white</option>
+			<option value="green">green</option>
+		</select>
+		<br/>
+		<button value="Clear">Clear</button>
+		</form>
+	</body>
+</html>

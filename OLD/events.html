@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Events</title>
+
+		<script>
+function changeColor(){
+var block  = document.getElementById("block");
+block.src = "green.png";
+
+}
+function revert(){
+var block  = document.getElementById("block");
+block.src = "red.jfif";
+
+}
+		</script>
+	</head>
+	<body>
+
+		<h1>Events</h1>
+		<p>this is simple html document</p>
+		<a href="#" onClick=showAlert()>Click Me!</a>
+		<img id="block" src="red.jfif" onMouseOver="changeColor()" onMouseOut="revert()">
+		</body>
+	</html>
